@@ -12,31 +12,10 @@
   				<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   				<%= csrf_meta_tags %>
 
-        <!-- Bootstrap -->
-        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!--Ion icons-->
-        <link href="assets/icons/css/ionicons.min.css" rel="stylesheet" type="text/css">
+      
         <!--google fonts-->
 
-        <!--Flex slider-->
-        <link href="assets/css/flexslider.css" rel="stylesheet">
-        <!--popups css-->
-        <link href="assets/css/magnific-popup.css" rel="stylesheet">
-        <!--animated css-->
-        <link href="assets/css/animate.css" rel="stylesheet">
-        <!--cube portfolio-->
-        <link href="assets/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet">
-        <!--pricing css-->
-        <link href="assets/css/pricing.css" rel="stylesheet" type="text/css">
-        <!--revolution slider setting css-->
-        <link href="assets/rs-plugin/css/settings.css" rel="stylesheet">
-        <!--master slider-->
-        <link href="assets/master-slider/style/masterslider.css" rel="stylesheet">
-        <link href="assets/master-slider/skins/default/style.css" rel="stylesheet">
-        <link href="assets/css/master-slider-custom.css" rel="stylesheet" type="text/css"> 
-          <link href="assets/video-background/background.css" rel="stylesheet" type="text/css">
-         <!--custom css (Using style.scss file for customize)-->
-        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -47,7 +26,36 @@
 
     </head>
 
-    		 
+    		 <nav class="navbar navbar-inverse sticky-nav navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo-light.png" alt="LOGO"></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right scroll-to">
+                        <li class="active"><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#work">Work</a></li>                       
+                        <li><a href="#contact">Contact</a></li>                                 
+                        <li class="dropdown">
+												<span class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true">Pages <i class="caret"></i></span>
+                            <ul class="dropdown-menu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="blog-single.html">Blog Single</a></li>
+                                <li><a href="elements.html">Elements</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container -->
+        </nav> 
        
 
     		 
@@ -56,4 +64,17 @@
 <%= yield %>
 
 </body>
+ <footer class="footer">
+            <div class="container text-center">
+                <a href="#"><img src="assets/images/logo-dark.png" alt=""></a>
+                <ul class="list-inline socials">
+                    <li><a href="#" class="fb"><i class="ion-social-facebook-outline"></i></a></li>
+                    <li><a href="#" class="twit"><i class="ion-social-twitter-outline"></i></a></li>
+                    <li><a href="#" class="g-plus"><i class="ion-social-googleplus-outline"></i></a></li>
+                    <li><a href="#" class="yout"><i class="ion-social-youtube-outline"></i></a></li>
+                    <li><a href="#" class="drib"><i class="ion-social-dribbble-outline"></i></a></li>
+                </ul>
+                <p>&copy; 2015. Made with <i class="ion-ios-heart-outline"></i> by Design_mylife</p>
+            </div>
+        </footer><!--footer end-->
 </html>
